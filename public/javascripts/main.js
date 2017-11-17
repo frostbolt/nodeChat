@@ -10,7 +10,7 @@ var login_text = document.querySelector("#login_text");
 var textarea = document.querySelector("#chat_text");
 var chat_msg = document.querySelector("#chat_msg");
 
-var ws = new WebSocket(`ws://localhost:80`);
+var ws = new WebSocket(`ws://localhost:5000`);
 
 var userName = "unknown"
 
