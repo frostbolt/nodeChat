@@ -1,0 +1,40 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+  color: #00B7FF;
+}
+
+textarea, input[type="text"], .btn {
+	width: 100%;
+	display: block;
+	padding: 10px 20px;
+	margin: 10px 0;
+	outline: none;
+}
+
+textarea {
+	min-height: 120px;
+	resize: vertical;
+}
+
+.btn {
+	color: white;
+	text-align: center;
+	background-color: #555;
+	cursor: pointer;
+
+}
+
+.btn:hover {
+	background-color: #666;
+}
+
+.hidden {
+	display: none;
+}

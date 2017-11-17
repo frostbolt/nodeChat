@@ -1,0 +1,11 @@
+{
+  "name": "nodechat",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "body-parser": "~1.18.2",
+    "cookie-parser": "~1.4.3",
+    "express": "~4.15.5",
+    "express-ws": "^3.0.0"
+  }
+}
