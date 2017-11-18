@@ -16,6 +16,8 @@ textarea, input[type="text"], .btn {
 	padding: 10px 20px;
 	margin: 10px 0;
 	outline: none;
+	border-radius: 3px;
+	border: 2px #999 solid;
 }
 
 textarea {
@@ -28,7 +30,7 @@ textarea {
 	text-align: center;
 	background-color: #555;
 	cursor: pointer;
-
+	
 }
 
 .btn:hover {
@@ -38,3 +40,64 @@ textarea {
 .hidden {
 	display: none;
 }
+
+#chat_window {
+	height: calc(100vh - 170px);
+	overflow-y: scroll;
+}
+.message {
+	display: grid;
+	grid-template-columns: 50px 1fr;
+	padding: 10px 0 0;
+}
+
+.message.system {
+	grid-template-columns: 1fr;
+	justify-items: center
+}
+.message.system p {
+	padding: 3px 10px;
+	border-radius: 3px;
+	background-color: #eee;
+}
+
+#login {
+	padding-top: 25vh;
+}
+
+.message_text {
+	padding: 2px 3px 2px 0;
+}
+.avatar {
+	padding: 10px 0;
+}
+.avatar > img {
+	display: block;
+	width: 42px;
+	height: 42px;
+	background-color: #444;
+	border: 2px #999 solid;
+	border-radius: 3px;
+}
+
+.nickname {
+	display: inline-block;
+	padding: 5px 0;
+	margin: 0;
+	font-size: 800;
+}
+
+p {
+	margin: 0;
+}
+#upload_form {
+	background-color: #eee;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
+
+
