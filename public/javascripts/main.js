@@ -33,11 +33,13 @@ btn_login.onclick = () => {
 
 btn_send.onclick = () => {
 	console.log("btn clicked");
-
-	ws.send(JSON.stringify({
-		user: userName,
-		message:  chat_msg.value
-	}));
+	if (chat_msg.value != ""){
+		ws.send(JSON.stringify({
+			user: userName,
+			message:  chat_msg.value
+		}));
+		chat_msg.value = "";
+	}
 
 }
 
