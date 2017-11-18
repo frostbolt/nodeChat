@@ -36,6 +36,7 @@ app.ws('/', (ws, req) => {
   });
 });
 
-app.listen(5000,  () => {
-  console.log('Example app listening on port 80!');
+var port = process.env.PORT || 5000;
+app.listen(port, function() {
+  console.log("Listening on " + port);
 });
