@@ -17,7 +17,8 @@ var userpic_file = document.querySelector("#userpic_file");
 var userName = "unknown"
 var userPic;
 
-function base64Encoder() {
+
+userpic_file.addEventListener("change", () => {
 	// https://stackoverflow.com/questions/17710147/image-convert-to-base64
 	if (this.files && this.files[0]) {
 		let FR = new FileReader();
@@ -35,8 +36,7 @@ function base64Encoder() {
 		avatar: "changed"
 	}));
 	upload_form.classList.add("hidden")
-}
-userpic_file.addEventListener("change", base64Encoder);
+});
 
 
 function createSystemMessage(text) {
