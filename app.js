@@ -45,6 +45,6 @@ app.ws('/', (ws, req) => {
 	});
 });
 
-app.listen(port, function() {
+app.listen(port, () => {
 	console.log("Listening on " + port);
 });
